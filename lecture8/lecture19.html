@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Tutorial</title>
+    <style>
+      .containr {
+        height: 400px;
+        width: 100%;
+        border: 3px solid black;
+        /* initialize the container as a flex box  */
+        display: flex;
+
+        /* properties for flex container */
+        flex-direction: row;
+
+        /* flex-direction: column;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse;  */
+
+        flex-wrap: nowrap;
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-flow: row-reverse wrap; */
+
+        /* justify-content: center; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+
+        /* align-items: center; */
+        /* align-items: start; */
+        /* align-items: self-end; */
+        /* align-items: self-start; */
+        /* align-items: flex-end; */
+        /* align-items: stretch; */
+      }
+
+      .item {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(139, 120, 209);
+        border: 2px solid rgb(27, 26, 26);
+        margin: 10px;
+        padding: 3px;
+        font-weight: 900;
+      }
+      #item-1 {
+        /* flex-grow: 3; */
+      }
+      #item-2 {
+        flex: 2 2 230px;
+      }
+      #item-3 {
+        /* order: 2; */
+        /* flex-shrink: 3; */
+        /* flex-basis: 420px; */
+        align-self: end;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>THIS IS FLEXBOX Tutorial</h1>
+    <div class="containr">
+      <div class="item" id="item-1">first box</div>
+      <div class="item" id="item-2">second box</div>
+      <div class="item" id="item-3">third box</div>
+      <!-- <div class="item" id="item-4">fourth box</div>
+      <div class="item" id="item-5">fifth box</div>
+      <div class="item" id="item-6">sixth box</div> -->
+    </div>
+  </body>
+</html>
